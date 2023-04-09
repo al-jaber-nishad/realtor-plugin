@@ -52,9 +52,9 @@ function realtor_plugin_listings_shortcode()
           <h2 class="listing-title"><a href="<?php echo get_permalink($listing); ?>"><?php echo get_the_title($listing); ?></a></h2>
           <div class="listing-excerpt"><?php echo get_the_excerpt($listing); ?></div>
           <div class="listing-meta">
-            <div class="listing-author">By <?php echo get_the_author_meta('display_name', $listing->post_author); ?></div>
-            <div class="listing-date"><?php echo get_the_date('', $listing); ?></div>
-            <div class="listing-status"><?php echo get_post_status($listing); ?></div>
+            <div class="listing-author">By <?php echo get_the_author_meta('display_name', $listing->post_author); ?></div><br>
+            <div class="listing-date"><?php echo get_the_date('', $listing); ?></div><br>
+            <div class="listing-status"><?php echo get_post_status($listing); ?></div><br>
           </div>
         </div>
       </div>
@@ -82,6 +82,6 @@ function realtor_plugin_listings_shortcode()
 <?php
   return ob_get_clean();
 }
-add_shortcode('realtor_plugin_listings', 'realtor_plugin_listings_shortcode');
+add_shortcode('realtor-plugin-listings', 'realtor_plugin_listings_shortcode');
 
 ?>

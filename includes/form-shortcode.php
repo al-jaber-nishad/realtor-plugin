@@ -99,6 +99,6 @@ function create_post_form_shortcode()
   return ob_get_clean();
 }
 
-add_shortcode('my-form', 'create_post_form_shortcode');
+add_shortcode('realtor-post-form', 'create_post_form_shortcode');
 
 ?>

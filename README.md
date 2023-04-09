@@ -4,9 +4,13 @@
 
 1. Download the `realtor-plugin` folder and zip it then upload it in the "Add new Plugin" Section.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. The REST API endpoint will be available at `/wp-json/realtor-plugin/v1/create-blog-post`.
+3. The Create Post API endpoint will be available at `/wp-json/realtor-plugin/v1/create-blog-post`.
+4. The Listing API endpoint will be available at `/wp-json/realtor-plugin/v1/listings`.
 
 ## Usage
+
+The form shortcode is `[realtor-post-form]` and the listing shortcode is `[realtor-plugin-listings]`
+
 
 To add a new listing to your website, you can use a tool like Postman to make a POST request to the `/wp-json/realtor-plugin/v1/create-blog-post` endpoint. The request should include the following parameters:
 
