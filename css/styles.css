@@ -1,0 +1,114 @@
+/* Form Shortcode */
+#listings-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#listings-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+#listings-form input[type="text"],
+#listings-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#listings-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#preview {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#listings-form input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.file-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #ccc;
+  padding: 20px 0;
+  transition: border 0.3s ease;
+  width: 100%;
+}
+
+.file-input-container:hover {
+  border-color: #555;
+}
+
+
+/* Listings Shortcode */
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.listing-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listing-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.listing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listing-details {
+  padding: 20px;
+}
+
+.listing-title {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.listing-excerpt {
+  margin: 0 0 20px 0;
+}
+
+.listing-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+  margin-top: auto;
+}
