@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Upload the `realtor-plugin` folder to the `/wp-content/plugins/` directory.
+1. Download the `realtor-plugin` folder and zip it then upload it in the "Add new Plugin" Section.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. The REST API endpoint will be available at `/wp-json/realtor-plugin/v1/create-blog-post`.
 
